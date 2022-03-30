@@ -132,7 +132,7 @@
 		}
 
 	strong, b {
-		color: #646464;
+		color: #146594;
 		font-weight: 400;
 	}
 
@@ -145,7 +145,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #646464;
+		color: #080808;
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 0.5em 0;
@@ -3162,8 +3162,8 @@
 
 	#banner {
 		background-attachment: scroll,							fixed;
-		background-color: #666;
-		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+		background-color: rgb(91, 102, 248);
+		background-image: url("css/images/overlay.png"), url("static/assets/images/banner.jpj");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
@@ -3256,7 +3256,7 @@
 /* Footer */
 
 	#footer {
-		background: #f0f0f0;
+		background: #aae1f7;
 		padding: 4em 0 6em 0;
 		text-align: center;
 	}
@@ -3274,7 +3274,7 @@
 			}
 
 		#footer .copyright {
-			color: #999;
+			color: rgb(22, 21, 21);
 			font-size: 0.9em;
 			line-height: 1em;
 			margin: 2em 0 0 0;
@@ -3287,7 +3287,7 @@
 			}
 
 			#footer .copyright li {
-				border-left: solid 1px #dddddd;
+				border-left: solid 1px #181a19;
 				display: inline-block;
 				list-style: none;
 				margin-left: 1em;

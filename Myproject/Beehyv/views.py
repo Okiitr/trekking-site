@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
+from django.contrib import messages
+from .forms import ContactForm
 
 # Create your views here.
 
@@ -16,4 +18,15 @@ def Elements(request):
     return render(request,'elements.html')
 
 def Contact(request):
-    return render(request,'contact.html')
+      # this is all for making a  user
+      if request.method=="POST":
+        form= ContactForm(request.POST)
+        if form.is_valid() :
+               form.save()
+               print ('Form Saved')
+               return redirect ('/index')
+
+      else:   
+            form= ContactForm(request.POST)
+            return render(request, 'contact.html', {'form':form} )
+   
